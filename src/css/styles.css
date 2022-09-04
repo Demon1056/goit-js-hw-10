@@ -11,10 +11,46 @@ body {
   color: #212121;
   line-height: 1.5;
 }
-
+p{
+  margin: 0;
+}
 #search-box {
   font: inherit;
   padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
+  width: 450px;
+  margin-bottom: 5px;
+}
+ul,ol{
+  margin: 0;
+  padding-left: 0;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.item {
+display: flex;
+align-items: center;
+}
+.item:not(:last-child){
+  margin-bottom: 5px;
+}
+.item-text { 
+font-size: 15px;
+font-weight: bold;;
+}
+.title-content{
+  display: flex;
+  align-items: center;
+}
+.name{
+  font-size: 25px;
+  font-weight: bold;
+}
+.properties{
+  font-weight: bold;
+  margin-right: 5px;
 }

@@ -1,5 +1,4 @@
 import debounce from 'lodash.debounce'
-
 import './css/styles.css';
 import {fetchCountries} from "./fetchCountries";
 
@@ -10,7 +9,7 @@ findInput.addEventListener('input', debounce(findCountries,DEBOUNCE_DELAY))
 
 function findCountries (event){
     const textToFind= event.target.value.trim();
-    if(!textToFind){
+    if(!textToFind){ 
         return 
     }
     fetchCountries(textToFind)}
